@@ -1,3 +1,5 @@
+/* ==========GAYA UMUM========== */
+
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400&display=swap");
 
 * {
@@ -12,6 +14,8 @@ body {
   box-sizing: border-box;
   background-color: #7bf7cd;
 }
+
+/* ==========HEADER========== */
 
 h2 {
   font-size: 20px;
@@ -52,6 +56,8 @@ header form button img {
   padding-top: 3px;
 }
 
+/* ==========WRAPPER DAN CONTAINER========== */
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -75,6 +81,8 @@ header form button img {
   height: fit-content;
 }
 
+/* ==========ITEM========== */
+
 .item {
   border-radius: 16px;
   margin-top: 16px;
@@ -94,6 +102,8 @@ header form button img {
   font-size: 12px;
 }
 
+/* ==========FORM========== */
+
 .form {
   display: flex;
   padding: 10px 16px;
@@ -112,9 +122,13 @@ header form button img {
   font-weight: lighter;
 }
 
+/* ==========SHADOW========== */
+
 .shadow {
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.4);
 }
+
+/* ==========INPUT DAN BUTTON========== */
 
 input[type="text"],
 input[type="date"] {
@@ -177,9 +191,7 @@ input[type="date"],
   text-align: center;
 }
 
-.form-title {
-  margin: auto 0;
-}
+/* ==========TOMBOL CEK DAN SAMPAH========== */
 
 .check-button {
   width: 40px;
@@ -231,6 +243,8 @@ input[type="date"],
 .trash-button {
   outline: none;
 }
+
+/* ==========JUMLAH BUKU DAN GAMBAR TIDAK ADA BUKU========== */
 
 .jmlh-book {
   margin-top: 28px;
