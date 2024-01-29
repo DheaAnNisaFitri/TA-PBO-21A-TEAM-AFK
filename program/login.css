@@ -1,76 +1,87 @@
+/* Gaya umum untuk seluruh halaman */
 body {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(to right, #7bf7cd, #8b2861);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: "Roboto", sans-serif; /* Menggunakan font Roboto atau font sans-serif sebagai default */
+  background: linear-gradient(to right, #7bf7cd, #8b2861); /* Gradien latar belakang */
+  margin: 0; /* Menghapus margin bawaan dari halaman HTML */
+  padding: 0; /* Menghapus padding bawaan dari halaman HTML */
+  display: flex; /* Menetapkan display ke flex untuk penataan konten */
+  justify-content: center; /* Menyusun konten ke tengah secara horizontal */
+  align-items: center; /* Menyusun konten ke tengah secara vertikal */
+  height: 100vh; /* Menetapkan tinggi halaman 100% dari viewport height */
 }
 
+/* Gaya untuk container form login */
 .login-container {
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  overflow: hidden;
-  width: 500px;
-  text-align: center;
-  padding: 20px;
+  background-color: #fff; /* Warna latar belakang container */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Bayangan pada container */
+  border-radius: 8px; /* Sudut bulat container */
+  overflow: hidden; /* Menyembunyikan konten yang melampaui batas container */
+  width: 500px; /* Lebar container */
+  text-align: center; /* Penataan teks ke tengah */
+  padding: 20px; /* Ruang dalam container */
 }
 
+/* Gaya untuk form login */
 form {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Menetapkan display form ke flex untuk penataan elemen form */
+  flex-direction: column; /* Mengatur tata letak elemen form dalam kolom */
 }
 
+/* Gaya untuk grup elemen form */
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Ruang antara grup elemen form */
 }
 
+/* Gaya untuk label form */
 label {
-  display: block;
-  font-weight: bold;
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 8px;
+  display: block; /* Menetapkan label sebagai elemen blok */
+  font-weight: bold; /* Menjadikan teks label tebal */
+  font-size: 16px; /* Ukuran font label */
+  color: #555; /* Warna teks label */
+  margin-bottom: 8px; /* Ruang antara label dan input */
 }
 
+/* Gaya untuk input form */
 input {
-  width: calc(100% - 24px);
-  padding: 12px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #f9f9f9;
-  color: #333;
-  transition: border-color 0.3s;
+  width: calc(100% - 24px); /* Lebar input mengambil 100% lebar form dikurangi padding */
+  padding: 12px; /* Ruang dalam input */
+  box-sizing: border-box; /* Memastikan padding dan border tidak menambah lebar elemen secara keseluruhan */
+  border: 1px solid #ccc; /* Border input */
+  border-radius: 4px; /* Sudut bulat input */
+  background-color: #f9f9f9; /* Warna latar belakang input */
+  color: #333; /* Warna teks input */
+  transition: border-color 0.3s; /* Animasi perubahan warna border saat di-focus */
 }
 
+/* Gaya untuk input form saat di-focus */
 input:focus {
-  outline: none;
-  border-color: #4caf50;
+  outline: none; /* Menghilangkan outline pada focus */
+  border-color: #4caf50; /* Warna border saat di-focus */
 }
 
+/* Gaya untuk tombol submit */
 .btn-submit {
-  background-color: #4caf50;
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  background-color: #4caf50; /* Warna latar belakang tombol submit */
+  color: #fff; /* Warna teks tombol submit */
+  padding: 12px 20px; /* Ruang dalam tombol submit */
+  border: none; /* Menghapus border tombol submit */
+  border-radius: 4px; /* Sudut bulat tombol submit */
+  cursor: pointer; /* Menjadikan kursor menjadi pointer saat diarahkan ke tombol */
+  font-size: 16px; /* Ukuran font tombol submit */
+  transition: background-color 0.3s; /* Animasi perubahan warna latar belakang tombol saat di-hover */
 }
 
+/* Gaya untuk tombol submit saat di-hover */
 .btn-submit:hover {
-  background-color: #45a049;
+  background-color: #45a049; /* Warna latar belakang tombol saat di-hover */
 }
 
+/* Gaya untuk paragraf di bawah form login */
 p {
-  margin-top: 15px;
+  margin-top: 15px; /* Ruang atas paragraf */
 }
 
+/* Gaya untuk tautan di bawah form login */
 a {
-  color: #007bff;
+  color: #007bff; /* Warna tautan */
 }
