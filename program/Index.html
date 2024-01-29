@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta untuk informasi dokumen -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Judul dari dokumen -->
     <title>PeminjamanBukuSMK4BDL</title>
+    <!-- Favicon untuk situs web -->
     <link rel="icon" href="assets/LOGO SMKN 4 BANDAR LAMPUNG.png" type="image/png">
+    <!-- Menghubungkan file stylesheet eksternal -->
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
+    <!-- Bagian header dari halaman web -->
     <header>
+      <!-- Judul utama dari halaman web -->
       <h1>Peminjaman Buku SMK4 Bandar Lampung </h1>
+      <!-- Formulir pencarian buku -->
       <form>
         <input class="" type="text" id="bookTitle" name="" placeholder="Cari Buku ..." />
       </form>
     </header>
 
+    <!-- Wrapper utama konten -->
     <div class="wrapper">
+      <!-- Container untuk menambahkan buku baru -->
       <div class="container bg-white shadow">
+        <!-- Judul untuk container -->
         <h2 class="container-header text-center">Tambah Buku</h2>
+        <!-- Formulir untuk menambahkan buku baru -->
         <form class="form" action="#" id="form">
+          <!-- Kolom input untuk judul buku -->
           <div class="form-group form-title">
             <input type="text" id="title" name="title" required placeholder="Judul Buku" />
           </div>
+          <!-- Kolom input untuk nama peminjam -->
           <div class="form-group form-title">
             <input type="text" id="author" name="author" required placeholder="Nama Peminjam" />
           </div>
+          <!-- Kolom input untuk tanggal peminjaman -->
           <div class="form-group form-title">
             <input type="date" id="date" name="date" required />
           </div>
+          <!-- Tombol untuk mengirim formulir -->
           <button type="submit" class="btn-submit" id="btn-submit">Tambah List</button>
+          <!-- Tombol untuk mereset formulir -->
           <button type="submit" class="btn-reset" id="btn-reset">Hapus Semua List</button>
+          <!-- Menampilkan jumlah total buku -->
           <div class="jmlh-book">
             <h3>Jumlah Buku:</h3>
             <h4 id="total-books"></h4>
           </div>
         </form>
       </div>
-      <div class="container2">
-        <h2 class="container-header">Belum Dikemablikan: <span id="unread-book"></span></h2>
 
+      <!-- Container untuk menampilkan buku belum dikembalikan -->
+      <div class="container2">
+        <!-- Judul untuk container -->
+        <h2 class="container-header">Belum Dikembalikan: <span id="unread-book"></span></h2>
+        <!-- Container untuk menampilkan daftar buku belum dikembalikan -->
         <div class="list-item" id="books"></div>
       </div>
-      <div class="container2">
-        <h2 class="container-header">Sudah Dikemablikan: <span id="read-book"></span></h2>
 
+      <!-- Container untuk menampilkan buku sudah dikembalikan -->
+      <div class="container2">
+        <!-- Judul untuk container -->
+        <h2 class="container-header">Sudah Dikembalikan: <span id="read-book"></span></h2>
+        <!-- Container untuk menampilkan daftar buku sudah dikembalikan -->
         <div class="list-item" id="books-items"></div>
       </div>
     </div>
+
+    <!-- Penanda untuk kasus ketika tidak ada daftar yang ditampilkan -->
     <div class="no-list"></div>
 
+    <!-- Menghubungkan file JavaScript -->
     <script src="main.js"></script>
   </body>
 </html>
