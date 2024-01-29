@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Set karakter set HTML -->
     <meta charset="UTF-8" />
+    <!-- Menentukan kompatibilitas rendering pada Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Menyesuaikan tampilan halaman sesuai dengan lebar perangkat -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Judul halaman -->
     <title>Login - PeminjamanBukuSMK4BDL</title>
+    <!-- Favicon untuk halaman -->
     <link
       rel="icon"
       href="assets/LOGO SMKN 4 BANDAR LAMPUNG.png"
       type="image/png"
     />
+    <!-- Menghubungkan dengan file CSS eksternal -->
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
+    <!-- Container untuk form login -->
     <div class="login-container">
+      <!-- Judul halaman login -->
       <h1>Login</h1>
+      <!-- Form untuk memasukkan username dan password -->
       <form id="login-form">
+        <!-- Grup elemen form untuk username -->
         <div class="form-group">
           <label for="username">Username:</label>
+          <!-- Input untuk memasukkan username -->
           <input type="text" id="username" name="username" required />
         </div>
+        <!-- Grup elemen form untuk password -->
         <div class="form-group">
           <label for="password">Password:</label>
+          <!-- Input untuk memasukkan password -->
           <input type="password" id="password" name="password" required />
         </div>
+        <!-- Tombol untuk mengirimkan form -->
         <button type="submit" class="btn-submit" id="btn-login">Login</button>
       </form>
+      <!-- Tautan untuk mendaftar jika belum memiliki akun -->
       <p>
         Don't have an account? <a href="registration.html">Register here</a>
       </p>
     </div>
 
+    <!-- Menghubungkan dengan file JavaScript eksternal -->
     <script src="login.js"></script>
   </body>
 </html>
